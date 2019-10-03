@@ -1,0 +1,9 @@
+<h1 class="post-title">{{ .Title }}</h1>
+
+{{- if .PublishDate }}
+<div class="post-info post-info-left">
+    <span><time datetime="{{ .PublishDate }}">{{ i18n "publishdate" . }}</time></span>
+</div>
+{{- end }}
+
+<div class="post-line"></div>
